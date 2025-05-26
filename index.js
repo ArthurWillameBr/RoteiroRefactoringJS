@@ -31,7 +31,7 @@ function gerarFaturaStr (fatura, pecas) {
     }
 
     for (let apre of fatura.apresentacoes) {
-      
+      const peca = pecas[apre.id];
       let total = calcularTotalApresentacao(apre, peca)
 
       // créditos para próximas contratações
